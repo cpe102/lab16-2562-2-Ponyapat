@@ -2,6 +2,11 @@
 using namespace std;
 
 //Write the definition of myString() here
+char myString(char *a,int N){
+	string s ="";
+	for (int i = 65; i < 65+N; i++){
+		
+}
 
 int main(){
 	char *p;
