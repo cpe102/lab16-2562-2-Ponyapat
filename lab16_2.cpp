@@ -2,10 +2,13 @@
 using namespace std;
 
 //Write the definition of myString() here
-char myString(char *a,int N){
-	string s ="";
-	for (int i = 65; i < 65+N; i++){
-		
+void myString(char *&p,int N){
+	char *last =new char [N];
+	for (int i=0;i<N;i++){
+		last[i]='A'+i;
+	}
+	p=last;
+	*(last+N) ='\0';
 }
 
 int main(){
